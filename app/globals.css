@@ -1,0 +1,335 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+
+  --ui-bg-primary: 0 0% 5%;
+  --ui-bg-secondary: 0 0% 8%;
+  --ui-bg-tertiary: 0 0% 12%;
+  --ui-border: 0 0% 20%;
+  --ui-text-primary: 0 0% 95%;
+  --ui-text-secondary: 0 0% 70%;
+  --ui-text-muted: 0 0% 50%;
+  --ui-accent: 210 100% 60%;
+  --ui-accent-hover: 210 100% 70%;
+
+  --lua-bg: 0 0% 5%;
+  --lua-line-numbers-bg: 0 0% 8%;
+  --lua-line-numbers-text: 0 0% 40%;
+  --lua-text: 0 0% 90%;
+  --lua-comment: 0 0% 40%;
+  --lua-keyword: 210 100% 70%;
+  --lua-function: 40 100% 70%;
+  --lua-string: 120 100% 70%;
+  --lua-number: 280 100% 70%;
+  --lua-property: 330 100% 70%;
+  --lua-roblox-global: 200 100% 75%;
+  --lua-roblox-service: 30 100% 75%;
+  --lua-boolean: 350 100% 70%;
+  --lua-operator: 180 100% 70%;
+}
+
+.theme-midnight {
+  --ui-bg-primary: 220 30% 8%;
+  --ui-bg-secondary: 220 30% 12%;
+  --ui-bg-tertiary: 220 30% 16%;
+  --ui-border: 220 20% 25%;
+  --ui-text-primary: 220 10% 95%;
+  --ui-text-secondary: 220 10% 75%;
+  --ui-text-muted: 220 10% 55%;
+  --ui-accent: 220 100% 65%;
+  --ui-accent-hover: 220 100% 75%;
+
+  --lua-bg: 220 30% 8%;
+  --lua-line-numbers-bg: 220 30% 12%;
+  --lua-line-numbers-text: 220 20% 45%;
+  --lua-text: 220 10% 90%;
+  --lua-comment: 220 10% 50%;
+  --lua-keyword: 220 100% 70%;
+  --lua-function: 200 100% 70%;
+  --lua-string: 180 100% 70%;
+  --lua-number: 240 100% 70%;
+  --lua-property: 260 100% 70%;
+  --lua-roblox-global: 200 100% 75%;
+  --lua-roblox-service: 30 100% 75%;
+  --lua-boolean: 350 100% 70%;
+  --lua-operator: 180 100% 70%;
+}
+
+.theme-synthwave {
+  --ui-bg-primary: 300 30% 8%;
+  --ui-bg-secondary: 300 30% 12%;
+  --ui-bg-tertiary: 300 30% 16%;
+  --ui-border: 300 20% 25%;
+  --ui-text-primary: 300 10% 95%;
+  --ui-text-secondary: 300 10% 75%;
+  --ui-text-muted: 300 10% 55%;
+  --ui-accent: 320 100% 65%;
+  --ui-accent-hover: 320 100% 75%;
+
+  --lua-bg: 300 30% 8%;
+  --lua-line-numbers-bg: 300 30% 12%;
+  --lua-line-numbers-text: 300 20% 45%;
+  --lua-text: 300 10% 90%;
+  --lua-comment: 300 10% 50%;
+  --lua-keyword: 320 100% 70%;
+  --lua-function: 280 100% 70%;
+  --lua-string: 180 100% 70%;
+  --lua-number: 240 100% 70%;
+  --lua-property: 0 100% 70%;
+  --lua-roblox-global: 200 100% 75%;
+  --lua-roblox-service: 30 100% 75%;
+  --lua-boolean: 350 100% 70%;
+  --lua-operator: 180 100% 70%;
+}
+
+.theme-matrix {
+  --ui-bg-primary: 120 30% 5%;
+  --ui-bg-secondary: 120 30% 8%;
+  --ui-bg-tertiary: 120 30% 12%;
+  --ui-border: 120 20% 20%;
+  --ui-text-primary: 120 100% 85%;
+  --ui-text-secondary: 120 80% 70%;
+  --ui-text-muted: 120 60% 50%;
+  --ui-accent: 120 100% 60%;
+  --ui-accent-hover: 120 100% 70%;
+
+  --lua-bg: 120 30% 5%;
+  --lua-line-numbers-bg: 120 30% 8%;
+  --lua-line-numbers-text: 120 20% 35%;
+  --lua-text: 120 100% 70%;
+  --lua-comment: 120 30% 40%;
+  --lua-keyword: 120 100% 60%;
+  --lua-function: 120 100% 80%;
+  --lua-string: 120 70% 50%;
+  --lua-number: 120 100% 90%;
+  --lua-property: 120 50% 70%;
+  --lua-roblox-global: 120 100% 75%;
+  --lua-roblox-service: 120 80% 75%;
+  --lua-boolean: 120 100% 70%;
+  --lua-operator: 120 100% 70%;
+}
+
+.theme-nord {
+  --ui-bg-primary: 220 16% 18%;
+  --ui-bg-secondary: 220 16% 22%;
+  --ui-bg-tertiary: 220 16% 26%;
+  --ui-border: 220 16% 35%;
+  --ui-text-primary: 220 16% 90%;
+  --ui-text-secondary: 220 16% 75%;
+  --ui-text-muted: 220 16% 60%;
+  --ui-accent: 210 50% 65%;
+  --ui-accent-hover: 210 50% 75%;
+
+  --lua-bg: 220 16% 18%;
+  --lua-line-numbers-bg: 220 16% 22%;
+  --lua-line-numbers-text: 220 16% 50%;
+  --lua-text: 220 16% 90%;
+  --lua-comment: 220 16% 60%;
+  --lua-keyword: 210 50% 70%;
+  --lua-function: 180 50% 70%;
+  --lua-string: 150 50% 70%;
+  --lua-number: 30 50% 70%;
+  --lua-property: 0 50% 70%;
+  --lua-roblox-global: 200 50% 75%;
+  --lua-roblox-service: 30 50% 75%;
+  --lua-boolean: 350 50% 70%;
+  --lua-operator: 180 50% 70%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: cursor-blink 1s infinite;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: hsl(var(--lua-text));
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: hsl(var(--lua-comment));
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: hsl(var(--lua-text));
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: hsl(var(--lua-property));
+}
+
+.token.boolean {
+  color: hsl(var(--lua-boolean));
+  font-weight: bold;
+}
+
+.token.number {
+  color: hsl(var(--lua-number));
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: hsl(var(--lua-string));
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: hsl(var(--lua-operator));
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: hsl(var(--lua-function));
+}
+
+.token.keyword {
+  color: hsl(var(--lua-keyword));
+  font-weight: bold;
+}
+
+.token.roblox-global {
+  color: hsl(var(--lua-roblox-global));
+  font-weight: bold;
+}
+
+.token.roblox-service {
+  color: hsl(var(--lua-roblox-service));
+  font-weight: bold;
+}
+
+.token.regex,
+.token.important {
+  color: hsl(var(--lua-string));
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.line-numbers {
+  background-color: hsl(var(--lua-line-numbers-bg));
+  color: hsl(var(--lua-line-numbers-text));
+  user-select: none;
+}
+
+.line-number {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  min-height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+pre,
+code {
+  background-color: hsl(var(--lua-bg));
+}
+
+.autocomplete-popup {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.autocomplete-popup .scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.autocomplete-popup .scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.autocomplete-popup .scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.autocomplete-popup .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.autocomplete-popup .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
